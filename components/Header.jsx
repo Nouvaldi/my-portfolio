@@ -20,7 +20,7 @@ const Header = () => {
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
           <Link
-            href="https://www.linkedin.com/in/adjinouvaldiramadhan00/"
+            href="https://www.linkedin.com/in/nouvaldiar00/"
             passHref
             legacyBehavior
           >

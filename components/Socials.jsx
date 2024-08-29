@@ -3,7 +3,7 @@ import { SiGithub, SiLinkedin, SiWhatsapp } from "react-icons/si";
 
 const socials = [
   { icon: <SiGithub />, path: "https://github.com/Nouvaldi" },
-  { icon: <SiLinkedin />, path: "https://www.linkedin.com/in/adjinouvaldiramadhan00/" },
+  { icon: <SiLinkedin />, path: "https://www.linkedin.com/in/nouvaldiar00/" },
   //   { icon: <SiWhatsapp />, path: "" },
 ];
 
