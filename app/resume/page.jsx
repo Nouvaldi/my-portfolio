@@ -1,5 +1,16 @@
 "use client";
 
+import { motion } from "framer-motion";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+import { ScrollArea } from "@/components/ui/scroll-area";
+
+// icons
 import {
   SiHtml5,
   SiCss3,
@@ -16,21 +27,7 @@ import {
   SiFlutter,
   SiDart,
 } from "react-icons/si";
-
 import { DiDotnet } from "react-icons/di";
-
-import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
-
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipProvider,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
-
-import { ScrollArea } from "@/components/ui/scroll-area";
-
-import { motion } from "framer-motion";
 
 const Resume = () => {
   // about data
@@ -71,6 +68,35 @@ const Resume = () => {
         company: "PT. Maybank Indonesia Finance",
         position: "Backend Developer Intern",
         duration: "Feb 2023 - Feb 2024",
+        points: [
+          {
+            point: "Built backend services for the internal mobile application",
+          },
+          {
+            point:
+              "Updated and improved data accuracy of official documents using Crystal Reports based on user requirements",
+          },
+          {
+            point:
+              "Designed and optimized several stored procedures using SQL Server to retrieve data for official documents",
+          },
+          {
+            point:
+              "Conducted testing and validation of stored procedures to ensure data integrity and reliability",
+          },
+          {
+            point:
+              "Created RESTful APIs using ASP.Net Core for tens of API endpoints for the internal mobile application",
+          },
+          {
+            point:
+              "Collaborated with cross-functional teams to integrate APIs, addressing requirements, and resolving issues",
+          },
+          {
+            point:
+              "Participated in Agile development process using Jira, such as sprint planning, task estimation, and daily stand-ups",
+          },
+        ],
       },
     ],
   };
@@ -214,15 +240,25 @@ const Resume = () => {
                       return (
                         <li
                           key={index}
-                          className="bg-[#232329] h-[184px] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                          className="bg-[#232329] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start"
                         >
                           <span className="text-accent">{item.duration}</span>
-                          <h3 className="text-xl min-h-[60px] text-center lg:text-left">
+                          <h3 className="text-xl text-center lg:text-left">
                             {item.position}
                           </h3>
-                          <div className="flex items-center gap-3">
-                            <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
-                            <p className="text-white/60">{item.company}</p>
+                          <p className="text-white/60 mb-4">{item.company}</p>
+                          <div className="flex flex-col gap-3">
+                            {item.points.map((p, index) => {
+                              return (
+                                <div
+                                  key={index}
+                                  className="flex justify-center items-center xl:justify-start gap-4"
+                                >
+                                  <span className="w-[6px] h-[6px] rounded-full bg-accent"></span>
+                                  <p className="text-white/60 text-sm w-fit">{p.point}</p>
+                                </div>
+                              );
+                            })}
                           </div>
                         </li>
                       );

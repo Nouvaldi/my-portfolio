@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
+import { SiGithub, SiLinkedin, SiWhatsapp } from "react-icons/si";
 
 const socials = [
-  { icon: <FaGithub />, path: "https://github.com/Nouvaldi" },
-  { icon: <FaLinkedin />, path: "https://www.linkedin.com/in/adjinouvaldiramadhan00/" },
-  //   { icon: <FaWhatsapp />, path: "" },
+  { icon: <SiGithub />, path: "https://github.com/Nouvaldi" },
+  { icon: <SiLinkedin />, path: "https://www.linkedin.com/in/adjinouvaldiramadhan00/" },
+  //   { icon: <SiWhatsapp />, path: "" },
 ];
 
 const Socials = ({ containerStyles, iconStyles }) => {
