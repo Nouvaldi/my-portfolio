@@ -17,7 +17,7 @@ const Home = () => {
       className="h-full"
     >
       <div className="container mx-auto h-full">
-        <div className="flex flex-col xl:flex-row items-center justify-center xl:pt-8 xl:pb-24">
+        <div className="flex flex-col xl:flex-row items-center justify-center xl:pt-8">
           {/* text */}
           <div className="text-center xl:text-left">
             <FlipTitles />
@@ -25,7 +25,7 @@ const Home = () => {
               Hello, I&apos;m <br />{" "}
               <span className="text-accent">Adji Nouvaldi</span>
             </h1>
-            <p className="max-w-[500px] mb-9 text-white/80">
+            <p className="max-w-[550px] mb-9 text-white/80">
               A highly passionate and curious fresh graduate majoring in
               Computer Science. I&apos;m eager to learn more about development
               practices and technologies and to contribute to developing
