@@ -6,6 +6,7 @@ import { motion } from "framer-motion";
 
 import Socials from "@/components/Socials";
 import FlipTitles from "@/components/FlipTitles";
+import Link from "next/link";
 
 const Home = () => {
   return (
@@ -30,14 +31,24 @@ const Home = () => {
             </p>
             {/* cv btn and socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
-              <Button
-                variant="outline"
-                size="lg"
-                className="uppercase flex items-center gap-2"
+              <Link
+                href={
+                  "https://drive.google.com/file/d/106_USIILqOqEeeCW0hXk6ssd8_05RFG8/view?usp=sharing"
+                }
+                passHref
+                legacyBehavior
               >
-                <span>Download CV</span>
-                <FiDownload className="text-lg" />
-              </Button>
+                <a target="_blank">
+                  <Button
+                    variant="outline"
+                    size="lg"
+                    className="uppercase flex items-center gap-2"
+                  >
+                    <span>Download CV</span>
+                    <FiDownload className="text-lg" />
+                  </Button>
+                </a>
+              </Link>
               <div className="mb-10 xl:mb-0">
                 <Socials
                   containerStyles="flex gap-6"
