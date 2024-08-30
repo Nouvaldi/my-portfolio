@@ -39,7 +39,7 @@ const Projects = () => {
     {
       title: "3D Model Showcase (WIP)",
       description:
-        "A website that displays my collection of 3D models made using Blender. This serves as a learning project for Three.js and Blender. A sneak peek is available below.",
+        "A website that displays my collection of 3D models made using Blender. This serves as a learning project for Three.js and Blender.",
       image: "",
       live: "https://distorted-glass-effect.vercel.app/",
       code: "https://github.com/Nouvaldi/test-next-three",
@@ -64,7 +64,7 @@ const Projects = () => {
     {
       title: "Employee Mobile",
       description:
-        "A mobile application made using Flutter as a part of my thesis that aims to digitize business operations for employees in a store with features such as attendance, making transactions, and viewing history.",
+        "A mobile application made using Flutter as a part of my thesis that aims to digitize business operations for employees of a store at Tanah Abang, Jakarta.",
       image: "/Assets/ssEmob.png",
       live: "",
       code: "https://github.com/Nouvaldi/skripsi-mob",
@@ -73,7 +73,7 @@ const Projects = () => {
     {
       title: "GameON",
       description:
-        "GameOn is an online marketplace website where Indonesian developers can market their games on this platform to Indonesian gamers. Users can easily find and play games made in Indonesia on the platform.",
+        "GameOn is an online shop application as part of the web programming course project in the 5th semester. Users can easily find games made in Indonesia on the platform.",
       image: "/Assets/ssGameOn.png",
       live: "",
       code: "https://github.com/Nouvaldi/GameOn",
